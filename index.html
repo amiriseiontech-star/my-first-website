@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Riseion Technologies | Digital Experiences</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<canvas id="particles"></canvas>
+<div class="ambient"></div>
+<div class="ambient two"></div>
+
+<!-- NAVBAR -->
+<header>
+    <nav class="navbar">
+        <a class="logo" href="#home">RISEION<span>.</span></a>
+
+        <div class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="nav-actions">
+            <button class="theme-btn" id="themeToggle"
+                    aria-label="Switch color theme"
+                    title="Switch theme">☀</button>
+
+            <button class="menu-btn" id="menuToggle"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false">☰</button>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <!-- HERO -->
+    <section class="container hero" id="home">
+        <div class="hero-content reveal">
+            <div class="eyebrow">Ideas ✦ Design ✦ Development</div>
+
+            <h1>
+                <span class="gradient-text">Digital Empires</span><br>
+                Built for Tomorrow
+            </h1>
+
+            <p>
+                We craft futuristic digital experiences, blending creativity,
+                technology and strategy to help brands build their empire
+                in the digital world.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    Explore Our Work ↗
+                </a>
+                <a href="#about" class="btn btn-outline">
+                    Discover More →
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-art reveal">
+            <div class="orb">
+                <span class="orb-letter">R</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section container" id="services">
+        <div class="section-heading reveal">
+            <div class="eyebrow">What We Do</div>
+            <h2>Building the <span class="gradient-text">Future</span></h2>
+            <p>Creative solutions designed to move your ideas forward.</p>
+        </div>
+
+        <div class="cards">
+            <article class="card reveal">
+                <div class="card-icon">⌘</div>
+                <h3>Web Development</h3>
+                <p>Modern, responsive websites built for speed and performance.</p>
+                <a class="arrow" href="#contact" aria-label="Ask about web development">→</a>
+            </article>
+
+            <article class="card reveal">
+                <div class="card-icon">✧</div>
+                <h3>UI/UX Design</h3>
+                <p>Beautiful interfaces with smooth and intuitive experiences.</p>
+                <a class="arrow" href="#contact" aria-label="Ask about UI and UX design">→</a>
+            </article>
+
+            <article class="card reveal">
+                <div class="card-icon">▣</div>
+                <h3>Mobile Apps</h3>
+                <p>Smart mobile experiences that connect people and ideas.</p>
+                <a class="arrow" href="#contact" aria-label="Ask about mobile apps">→</a>
+            </article>
+
+            <article class="card reveal">
+                <div class="card-icon">☁</div>
+                <h3>Cloud Solutions</h3>
+                <p>Reliable digital infrastructure designed to scale with you.</p>
+                <a class="arrow" href="#contact" aria-label="Ask about cloud solutions">→</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section container" id="about">
+        <div class="about-box reveal">
+            <div>
+                <div class="eyebrow">About Us</div>
+                <h2>Creativity Meets <span class="gradient-text">Technology</span></h2>
+                <p>
+                    Welcome to Riseion Technologies. We believe every great
+                    digital idea begins with curiosity, creativity and a
+                    willingness to learn. Our goal is to turn ideas into
+                    meaningful digital experiences.
+                </p>
+                <a href="#contact" class="btn btn-primary">Let's Connect →</a>
+            </div>
+
+            <div class="about-visual" aria-hidden="true">✦</div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section container" id="projects">
+        <div class="section-heading reveal">
+            <div class="eyebrow">Selected Work</div>
+            <h2>Ideas Into <span class="gradient-text">Reality</span></h2>
+            <p>Explore the kind of digital experiences we love to create.</p>
+        </div>
+
+        <div class="cards">
+            <article class="card reveal">
+                <div class="card-icon">🌐</div>
+                <h3>Creative Website</h3>
+                <p>A responsive landing page with modern design and motion.</p>
+                <a class="arrow" href="#contact" aria-label="Discuss creative website">↗</a>
+            </article>
+
+            <article class="card reveal">
+                <div class="card-icon">◈</div>
+                <h3>Brand Identity</h3>
+                <p>A distinctive visual direction for a digital-first brand.</p>
+                <a class="arrow" href="#contact" aria-label="Discuss brand identity">↗</a>
+            </article>
+
+            <article class="card reveal">
+                <div class="card-icon">⌁</div>
+                <h3>Interactive UI</h3>
+                <p>Engaging interfaces with subtle animations and feedback.</p>
+                <a class="arrow" href="#contact" aria-label="Discuss interactive UI">↗</a>
+            </article>
+
+            <article class="card reveal">
+                <div class="card-icon">✳</div>
+                <h3>Future Concepts</h3>
+                <p>Fresh experiments that bring bold ideas to life.</p>
+                <a class="arrow" href="#contact" aria-label="Discuss future concepts">↗</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section container" id="contact">
+        <div class="section-heading reveal">
+            <div class="eyebrow">Get In Touch</div>
+            <h2>Let's Build Something <span class="gradient-text">Amazing</span></h2>
+            <p>Have an idea? Start the conversation here.</p>
+        </div>
+
+        <form class="contact-box reveal" id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Tell us about your idea..." required></textarea>
+            <button type="submit" class="btn btn-primary">Send Message →</button>
+            <p id="formMessage" role="status" aria-live="polite"></p>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>© <span id="year"></span> Riseion Technologies. Crafted with creativity ✦</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
